@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilos do HTML aqui */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Venda de Produto</h1>
+    <div class="info">
+      <span class="label">Cliente:</span>
+      <span class="value" th:text="${venda.cliente.nome}"></span>
+    </div>
+    <div class="info">
+      <span class="label">Produto:</span>
+      <span class="value" th:text="${venda.produto.nome}"></span>
+    </div>
+    <div class="info">
+      <span class="label">Preço:</span>
+      <span class="value" th:text="${venda.preco}"></span>
+    </div>
+  </div>
+</body>
+</html>
